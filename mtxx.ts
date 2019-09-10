@@ -186,13 +186,13 @@ export module Mtxx {
         public ltg: string = "";
         private api: Api = new Api();
         public device: any = {
-            gid: '676824413',
+            gid: '',
             client_channel_id: 'setup_beta',
             client_model: 'MI 5',
             zip_version: '3.1.1.6',
             version: '8.6.4.3',
             mac: '02:00:00:00:00:00',
-            client_id: '1089867602',
+            client_id: '',
             client_language: 'zh-Han',
 
             os_type: 'android',
@@ -200,14 +200,14 @@ export module Mtxx {
             sdk_version: '3.1.3',
             client_os: '7.0',
 
-            iccid: '89620140006047127490',
-            imei: '862155034383645',
-            android_id: '2aef0f8e072ddd42',
+            iccid: '',
+            imei: '',
+            android_id: '',
             client_network: 'WIFI'
         };
         public static account_app_id = "6184556739355017217";
         public static xiuxiu_app_id = "6184556633574670337";
-        private accessToken = "_v2NjY2OGI2YTEjMTU3NTg3MDA3MSMwIzAjMDU4MDc5OWYyODEyNTQ2ZTk4MTMzNjhjNjc4NDBhZmQ4I0JKX1NII0JKX1NIIzVkNzczNzc3";
+        private accessToken = "";
 
         constructor() {
 
@@ -227,7 +227,6 @@ export module Mtxx {
                 method: url.method,
                 data: pack,
                 headers: {
-                    "Unlogin-Token": '676824413',
                     'Host': UrlContainer.account_host,
                 }
             });
@@ -337,7 +336,7 @@ export module Mtxx {
         public static getVCode() {
             const form = {
                 phone_cc: '86',
-                phone: '17311301741',
+                phone: '',
             };
         }
     }
